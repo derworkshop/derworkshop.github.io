@@ -4,6 +4,8 @@
 /*
 /*****************************************************************************/
 
+@import url(http://fonts.googleapis.com/css?family=Lekton:400,700);
+
 /* Global Reset */
 * {
   margin: 0;
@@ -17,6 +19,9 @@ body {
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
+
+  background-image: url("../images/carpentry.jpg"); 
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +33,62 @@ p { margin: 1em 0; }
 a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
+
+
+/*****************************************************************************/
+/*
+/* Navigation
+/*
+/*****************************************************************************/
+
+.nav-bar {
+  float: left;
+  width: 300px;
+  height: 400px;
+  margin-top: 100px;
+
+  font-family: 'Lekton', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+
+  overflow: hidden;
+
+  /*background-color: red;*/
+
+
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+}
+
+.nav-bar li {
+  margin: 40px 5px 40px 5px;
+}
+
+/*****************************************************************************/
+/*
+/* Content
+/*
+/*****************************************************************************/
+
+.content {
+  width: 60%;
+  height: 500px;
+  float: left;
+  top: 100px;
+  margin-left: 50px;
+  margin-top: 100px;
+
+  overflow: hidden;
+  /*background-color: blue;*/
+}
+
 
 /*****************************************************************************/
 /*
@@ -121,40 +182,3 @@ ul.posts span {
   border: 0;
 }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-}
-
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
-}
