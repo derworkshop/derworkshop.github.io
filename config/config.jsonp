@@ -1,0 +1,5 @@
+derworkshop.configure({
+	"500px" : {
+		"sdkKey" : "6f521d4df56ee9fbfc00c1a3fd237643e0761594" 
+	}
+});
