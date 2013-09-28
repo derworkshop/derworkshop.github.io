@@ -4,8 +4,8 @@
 /*
 /*****************************************************************************/
 
-@import url(http://fonts.googleapis.com/css?family=Lekton|Bilbo+Swash+Caps:400,700);
-
+@import url(http://fonts.googleapis.com/css?family=Lekton:400,700);
+@import url(http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps:400,700);
 
 /* Global Reset */
 * {
