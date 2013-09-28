@@ -4,7 +4,7 @@
 /*
 /*****************************************************************************/
 
-@import url(http://fonts.googleapis.com/css?family=Lekton|Bilbo+Swash+Caps|Tangerine:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lekton|Bilbo+Swash+Caps:400,700);
 
 
 /* Global Reset */
@@ -52,29 +52,19 @@ a:visited { color: #a0a; }
 /*****************************************************************************/
 
 .nav-bar {
-
   position: fixed;
-
   float: left;
   width: 300px;
   height: 400px;
   top: 0px;
-
   font-family: 'Lekton', sans-serif;
   font-size: 20px;
   font-weight: bold;
-
   overflow: hidden;
-
-  /*background-color: red;*/
-
-
 }
 
 .nav-bar .title {
-
   display: block;
-  /*font-family: 'Tangerine', cursive;*/
   font-family: 'Bilbo Swash Caps', cursive;
   font-size: 50px;
   font-weight: bold;
