@@ -1,26 +1,39 @@
 
 /* Fonts */
 
-@import url(http://fonts.googleapis.com/css?family=Lekton:400,700);
 @import url(http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps:400,700);
+@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+@import url(http://fonts.googleapis.com/css?family=Cardo:400,700,400italic);
 
 /* Reset
 ------------------------------------------------------------ */
 * { margin: 0; padding: 0; }
-html { overflow-y: scroll;}
+html { 
+	overflow-y: scroll;
+	height: 80%;
+}
 body {
  background:#ffffff;
 	font-size: 13px; 
 	color: #666666; 
 	font-family: Arial, helvetica, sans-serif;
 	background-color: #FFF;
+	height: 100%;
 }
 ol, ul { list-style: none; margin: 0;}
 ul li { margin: 0; padding: 0;}
-h1 { margin-bottom: 10px; color: #111111;}	
-a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
-p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
-img { display: block; margin-bottom: 10px;}
+h1 { 
+	margin-bottom: 10px; 
+	color: #111111;
+	font-family: 'Cardo', serif;
+}	
+a, img { outline: none; border:none; color: #000; font-weight: bold;}
+p { 
+	margin: 0 0 10px;
+	line-height: 1.4em; 
+	font-family: 'Cardo', serif;
+}
+img { display: block;}
 aside { font-style: italic; font-size: 0.9em;}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section { 
@@ -47,10 +60,11 @@ footer, header, hgroup, menu, nav, section {
 
 /* Structure */
 #wrapper {
+	height: 100%;
 	width: 96%;	
 	max-width: 920px;
-	margin: auto;
 	padding: 2%;
+	margin: auto;
 	} 
 
 	#main {
@@ -66,60 +80,135 @@ footer, header, hgroup, menu, nav, section {
 
 /* Header */
 
-header .header {
+.header {
 	width: 100%;
-	display:inline-block;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
+	height: 10%;
 	color: #000;
-	margin-bottom: 7px;
+	margin-top: 25px;
 }
 
 /* Logo H1 */
 header h1 {
+	text-shadow: 0px 2px 22px rgba(163, 150, 150, 0.5);
 	height: 50px;
 	width: 220px;
 	float: left;
 	display: block;
-	/*text-indent: -9999px;*/
 	font-family: 'Bilbo Swash Caps', cursive;
 	font-size: 50px;
 	font-weight: bold;
 	margin-bottom: 0px;
+	color: #000000;
 	}
 		
 /* Nav */
 header nav {
 	float: right;
-	margin-top: 40px; 
+	margin-top: 30px; 
+	font-size: 15px;
+	height: 35px;
 	}
 	
+	header nav ul {
+		height: 100%;
+
+	}
+
 	header nav li {
 		display: inline;
-		margin-left: 20px;
+		margin-left: 30px;
+		text-align: center;
+		
 		}
 
 			header nav li a {
 				text-decoration: none;
-				font-family: 'Lekton', sans-serif;
-				font-size: 20px;
+				font-family: 'Rock Salt', cursive;
 				font-weight: bold;
 
 			}
-/* Banner */			
-#content {
+
+#home.home {
+	color: #900000;
+}
+
+#works.works {
+	color: #900000;
+}
+
+#gallery.gallery {
+	color: #900000;
+}
+
+#about.about {
+	color: #900000;
+}
+
+#contact.contact {
+	color: #900000;
+}
+
+
+/* content */			
+#frame {
 	float: left;
 	margin-bottom: 15px;
 	width: 100%;
+	min-height: 500px;
+	background-color: #492A2A;
+
 	}
 
-	#content img {
+	#frame img {
 		width: 100%;
 		}
 
 
+#frame .content {
+	margin: 4% 7%;
+	overflow: visible;
+}
+
+	#frame .content h1 {
+		font-family: 'Rock Salt', cursive;
+		font-size: 15px;
+		color: #BBB;
+	}
+
+	#frame .content p {
+		font-size: 15px;
+		color: #CEBEBE;
+	}
+
+/* Photos */
+
+.photos {
+	height: 100%;
+	width: 100%;
+	min-height: 500px;
+	padding-bottom: 40px;
+}
+
+.photo {
+	display: inline-block;
+
+	height: 200px;
+	width: 200px;
+	/*background-color: white;	*/
+
+	margin: 40px 0px 0px 9%; 
+}
+
+.photo img {
+	width: 100%;
+	-webkit-box-shadow: 1px 1px 26px rgba(86, 77, 74, 0.53);
+	-moz-box-shadow:    1px 1px 26px rgba(86, 77, 74, 0.53);
+	box-shadow:         1px 1px 26px rgba(86, 77, 74, 0.53);
+}
+
+
 /* Media Queries */
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 780px) {
 
 	header h1 {
 		width: 100%;
@@ -127,26 +216,36 @@ header nav {
 		margin-bottom: 20px;
 	}
 
-	header .header {
+    .header {
 		border-bottom: none;
 		width: 100%;
+		height: 45%;
 	}
 
 	header nav, #main, aside {
-		float: left;
-		clear: left;
-		margin: 0 0 10px; 
-		width: 100%;
+			float: left;
+			clear: left;
+			margin: 0 0 10px; 
+			width: 100%;
 		}	
-		header nav li {
+
+		header nav ul {
+	/*		padding-left: 10%;
+			padding-right: 10%;*/
+		}
+
+		header nav li {	
 			margin: 0;
-			/*background: #efefef;*/
-			display: block;
+			background: #efefef;
+			display: inline-block;
 			margin-bottom: 3px;
+			width: 49%;
 			}
 			header nav a {
 				display: block;
 				padding: 10px;
 				text-align: center;
-				}			
+				}		
+	}
+
 }
