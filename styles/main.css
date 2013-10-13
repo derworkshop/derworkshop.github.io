@@ -160,7 +160,7 @@ header nav {
 	}
 
 	#frame img {
-		width: 100%;
+		max-width: 100%;
 		}
 
 
@@ -186,7 +186,7 @@ header nav {
 	height: 100%;
 	width: 100%;
 	min-height: 500px;
-	padding-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .photo {
@@ -197,6 +197,7 @@ header nav {
 	/*background-color: white;	*/
 
 	margin: 40px 0px 0px 9%; 
+	cursor: pointer;
 }
 
 .photo img {
@@ -206,7 +207,14 @@ header nav {
 	box-shadow:         1px 1px 26px rgba(86, 77, 74, 0.53);
 }
 
-
+#photo {
+	display: none;
+}
+	#photo img {
+		display: inline-block;
+		margin: 3% 30% 0 30%;
+		max-height: 85%;
+	}
 /* Media Queries */
 @media screen and (max-width: 780px) {
 
