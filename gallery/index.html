@@ -3,26 +3,166 @@ layout: default
 title: Gallery
 id: gallery
 ---
+<link rel="stylesheet" href="/styles/gallery.css" />
 
 <script src="/scripts/photos.js"></script>
-<script type="text/javascript">
-	displayPhotos();	
-</script>
 
 
-<div id="photos" class="photos">
-	<!-- <div class="photo">
-		<img src="/images/carpentry.jpg" alt="banner" />
-	</div>
-	<div class="photo"></div>
-	<div class="photo"></div>
-	<div class="photo"></div>
-	<div class="photo"></div>
- -->
-</div>
 
-<div id="photo" class="photos">
-	<a id="big-photo-link" target="_blank">
-		<img id="big-photo" src="http://ppcdn.500px.org/47583964/91739e1cac0941f4500170fef6135c0a38a2e7b7/4.jpg" alt="banner" /> </a>
-</div>
+  <!--// Gallery Markup: A container that the plugin is called upon, and two lists for the images (use images with same aspect ratio) //-->
+  <div id="gallery-container">
+    
+    <ul class="items--small">
+      <li class="item"><a href="#"><img src="/images/gallery/small-1.png" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/images/gallery/small-2.png" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/images/gallery/small-3.png" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/images/gallery/small-4.png" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/images/gallery/small-5.png" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/images/gallery/small-6.png" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/images/gallery/small-7.png" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/images/gallery/small-8.png" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/images/gallery/small-9.png" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/images/gallery/small-10.png" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/images/gallery/small-11.png" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/images/gallery/small-12.png" alt="" /></a></li>
+    </ul>
+    <ul class="items--big">
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/images/gallery/big-1.jpg" alt="" />
+            <figcaption class="img-caption">
+              Caption
+            </figcaption>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/images/gallery/big-2.jpg" alt="" />
+            <figcaption class="img-caption">
+              Caption
+            </figcaption>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/images/gallery/big-3.jpg" alt="" />
+            <figcaption class="img-caption">
+              Caption
+            </figcaption>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/images/gallery/big-4.jpg" alt="" />
+            <figcaption class="img-caption">
+              Caption
+            </figcaption>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/images/gallery/big-5.jpg" alt="" />
+            <figcaption class="img-caption">
+              Caption
+            </figcaption>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/images/gallery/big-6.jpg" alt="" />
+            <figcaption class="img-caption">
+              Caption
+            </figcaption>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/images/gallery/big-7.jpg" alt="" />
+            <figcaption class="img-caption">
+              Caption
+            </figcaption>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/images/gallery/big-8.jpg" alt="" />
+            <figcaption class="img-caption">
+              Caption
+            </figcaption>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/images/gallery/big-9.jpg" alt="" />
+            <figcaption class="img-caption">
+              Caption
+            </figcaption>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/images/gallery/big-10.jpg" alt="" />
+            <figcaption class="img-caption">
+              Caption
+            </figcaption>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/images/gallery/big-11.jpg" alt="" />
+            <figcaption class="img-caption">
+              Caption
+            </figcaption>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/images/gallery/big-12.jpg" alt="" />
+            <figcaption class="img-caption">
+              Caption
+            </figcaption>
+          </figure>
+          </a>
+      </li>
+    </ul>
+    <div class="controls">
+      <span class="control icon-arrow-left" data-direction="previous"></span> 
+      <span class="control icon-arrow-right" data-direction="next"></span> 
+      <span class="grid icon-grid"></span>
+      <span class="fs-toggle icon-fullscreen"></span>
+    </div>
+  
 
+</div><!--end demo-wrapper-->
+
+
+  <script>
+    $(document).ready(function(){
+     $('#gallery-container').sGallery({
+        fullScreenEnabled: true
+      });
+    });
+  </script>
