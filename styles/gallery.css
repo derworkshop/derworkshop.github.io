@@ -5,7 +5,7 @@
 *
 */
 
-* {
+#gallery {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -20,7 +20,10 @@
   /*max-width: 50em;*/
   text-align: center;
   overflow: hidden;
-  padding-top: 1em
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
 }
 
 #gallery-container:full-screen {
@@ -120,7 +123,7 @@
 .item {
   display: inline-block;
   cursor: pointer;
-  width: 24%;
+  width: 23%;
   height: auto;
   margin-right: .5%
 }
@@ -129,6 +132,10 @@
 .item--big img {
   width: 100%;
   display:block;
+}
+
+.items--small {
+  margin-top: 35px;
 }
 
 .items--big {
