@@ -269,16 +269,19 @@ header nav {
 			margin: 0;
 			background: #efefef;
 			display: inline-block;
-			font-size: 13px;
+			box-sizing: border-box;
+			font-size: 10px;
 			margin-bottom: 3px;
+			padding-top: 1.2%;
 			height: 30%;
 			width: 49%;
 			}
 			header nav a {
-				margin-top: 1%;
-
+				/*margin-top: 1%;*/
+				/*height: 100%;*/
+				/*padding-top: 10px;*/
 				display: block;
-				box-sizing: content-box;
+				box-sizing: border-box;
 				/*height: 100%;*/
 				text-align: center;
 				}		
